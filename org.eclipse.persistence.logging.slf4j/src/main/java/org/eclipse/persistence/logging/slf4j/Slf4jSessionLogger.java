@@ -67,8 +67,8 @@ import org.slf4j.LoggerFactory;
  * </p>
  * <ul>
  * <li>ALL,FINER,FINEST -> TRACE
- * <li>FINE -> DEBUG
- * <li>CONFIG,INFO -> INFO
+ * <li>FINE,CONFIG -> DEBUG
+ * <li>INFO -> INFO
  * <li>WARNING -> WARN
  * <li>SEVERE -> ERROR
  * </ul>
@@ -90,7 +90,7 @@ public class Slf4jSessionLogger extends AbstractSessionLog {
       MAP_LEVELS.put(SessionLog.FINEST, LogLevel.TRACE);
       MAP_LEVELS.put(SessionLog.FINER, LogLevel.TRACE);
       MAP_LEVELS.put(SessionLog.FINE, LogLevel.DEBUG);
-      MAP_LEVELS.put(SessionLog.CONFIG, LogLevel.INFO);
+      MAP_LEVELS.put(SessionLog.CONFIG, LogLevel.DEBUG);
       MAP_LEVELS.put(SessionLog.INFO, LogLevel.INFO);
       MAP_LEVELS.put(SessionLog.WARNING, LogLevel.WARN);
       MAP_LEVELS.put(SessionLog.SEVERE, LogLevel.ERROR);

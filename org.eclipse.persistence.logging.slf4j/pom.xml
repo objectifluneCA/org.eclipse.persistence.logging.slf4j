@@ -61,8 +61,8 @@
                         <Bundle-SymbolicName>org.eclipse.persistence.logging.slf4j</Bundle-SymbolicName>
                         <Export-Package>org.eclipse.persistence.logging.slf4j;version=${project.version}</Export-Package>
                         <Import-Package>
-                            org.eclipse.persistence.logging;version="[2.4.0,3.0.0)",
-                            org.slf4j;version="[1.6.0,2.0.0)"
+                            org.eclipse.persistence.logging;version="[2.6.0,3.0.0)",
+                            org.slf4j;version="[1.7.25,2.0.0)"
                         </Import-Package>
                     </instructions>
                 </configuration>
@@ -74,12 +74,12 @@
   		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>[1.6.0,2.0.0)</version>
+			<version>1.7.25</version>
 		</dependency>
   	<dependency>
 		<groupId>org.eclipse.persistence</groupId>
-		<artifactId>eclipselink</artifactId>
-		<version>[2.4.0, 3.0.0)</version>
+		<artifactId>org.eclipse.persistence.core</artifactId>
+		<version>2.6.0</version>
 	</dependency>
 	</dependencies>
 </project>
